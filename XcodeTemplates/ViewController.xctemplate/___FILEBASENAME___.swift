@@ -19,6 +19,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
+import DPPreviewProvider
 @available(iOS 13.0, *) struct ___FILEBASENAMEASIDENTIFIER___Provider: PreviewProvider {
     static var previews: some View {
         PreviewView<___FILEBASENAMEASIDENTIFIER___>().edgesIgnoringSafeArea(.all)

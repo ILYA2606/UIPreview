@@ -10,48 +10,48 @@
 import SwiftUI
 
 /// Превью контроллера
-@available(iOS 13.0, *) struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
-    typealias UIViewControllerType = T
-    typealias InitHandler = () -> (UIViewControllerType)
+@available(iOS 13.0, *) public struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
+    public typealias UIViewControllerType = T
+    public typealias InitHandler = () -> (UIViewControllerType)
     private var initHandler: InitHandler?
     
     /// Инициализатор с конструктором
     /// - Parameter initHandler: Блок для кастомного конструктора
-    init(_ initHandler: InitHandler? = nil) {
+    public init(_ initHandler: InitHandler? = nil) {
         self.initHandler = initHandler
     }
 
-    func makeUIViewController(
+    public func makeUIViewController(
         context: UIViewControllerRepresentableContext<PreviewViewController>
     ) -> UIViewControllerType {
         return initHandler?() ?? UIViewControllerType()
     }
 
-    func updateUIViewController(
+    public func updateUIViewController(
         _ uiViewController: UIViewControllerType,
         context: UIViewControllerRepresentableContext<PreviewViewController>
     ) {}
 }
 
 /// Превью вьюшки
-@available(iOS 13.0, *) struct PreviewView<T: UIView>: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UIViewController
-    typealias InitHandler = () -> (T)
+@available(iOS 13.0, *) public struct PreviewView<T: UIView>: UIViewControllerRepresentable {
+    public typealias UIViewControllerType = UIViewController
+    public typealias InitHandler = () -> (T)
     private var initHandler: InitHandler?
     
     /// Инициализатор с конструктором
     /// - Parameter initHandler: Блок для кастомного конструктора
-    init(_ initHandler: InitHandler? = nil) {
+    public init(_ initHandler: InitHandler? = nil) {
         self.initHandler = initHandler
     }
 
-    func makeUIViewController(
+    public func makeUIViewController(
         context: UIViewControllerRepresentableContext<PreviewView>
     ) -> UIViewControllerType {
         return makeViewController(from: initHandler?() ?? T())
     }
 
-    func updateUIViewController(
+    public func updateUIViewController(
         _ uiViewController: UIViewControllerType,
         context: UIViewControllerRepresentableContext<PreviewView>
     ) {}

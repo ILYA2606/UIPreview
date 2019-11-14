@@ -28,6 +28,7 @@ final class PushButton: UIButton {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
+import DPPreviewProvider
 @available(iOS 13.0, *) struct PushButtonProvider: PreviewProvider {
     static var previews: some View {
         // Кастомный инициализатор для превью кнопки

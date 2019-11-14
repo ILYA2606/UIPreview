@@ -28,6 +28,7 @@ final class SecondViewController: BaseViewController {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
+import DPPreviewProvider
 @available(iOS 13.0, *) struct SecondViewControllerProvider: PreviewProvider {
     static var previews: some View {
         PreviewViewController {

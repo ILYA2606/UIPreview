@@ -15,7 +15,6 @@
 		091DAE67237C09A30090CE85 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE66237C09A30090CE85 /* SecondViewController.swift */; };
 		091DAE69237C09C50090CE85 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE68237C09C50090CE85 /* MainNavigationController.swift */; };
 		091DAE6B237C0CC60090CE85 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE6A237C0CC60090CE85 /* BaseViewController.swift */; };
-		091DAE6D237C15160090CE85 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE6C237C15160090CE85 /* PreviewProvider.swift */; };
 		D4065B4598D09AEC04F44812 /* Pods_UIPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229AE87D17015FB8B8F23C6F /* Pods_UIPreview.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		091DAE66237C09A30090CE85 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		091DAE68237C09C50090CE85 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		091DAE6A237C0CC60090CE85 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		091DAE6C237C15160090CE85 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		229AE87D17015FB8B8F23C6F /* Pods_UIPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A52FF6A61B9B8005CB5AF6 /* Pods-UIPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIPreview.debug.xcconfig"; path = "Target Support Files/Pods-UIPreview/Pods-UIPreview.debug.xcconfig"; sourceTree = "<group>"; };
 		39BF700B352D47EF71FC7376 /* Pods-UIPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIPreview.release.xcconfig"; path = "Target Support Files/Pods-UIPreview/Pods-UIPreview.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,14 +65,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		091BF48D237C582D0043522A /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				091DAE6C237C15160090CE85 /* PreviewProvider.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		091DAE46237C07110090CE85 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				091DAE52237C07110090CE85 /* AppDelegate.swift */,
-				091BF48D237C582D0043522A /* Helper */,
 				091BF48C237C580A0043522A /* View */,
 				091BF48B237C57FC0043522A /* Controller */,
 				091DAE5B237C07140090CE85 /* Assets.xcassets */,
@@ -240,7 +229,6 @@
 			files = (
 				091BF48F237C5EAC0043522A /* PushButton.swift in Sources */,
 				091DAE6B237C0CC60090CE85 /* BaseViewController.swift in Sources */,
-				091DAE6D237C15160090CE85 /* PreviewProvider.swift in Sources */,
 				091DAE57237C07110090CE85 /* FirstViewController.swift in Sources */,
 				091DAE53237C07110090CE85 /* AppDelegate.swift in Sources */,
 				091DAE69237C09C50090CE85 /* MainNavigationController.swift in Sources */,
