@@ -21,7 +21,10 @@ Code-based UI development with Canvas Preview
 ![Demo](/resources/demo.mov)
 
 ## Installation
-- Add 'PreviewUIKit' in your iOS Project with CocoaPods '''pod 'PreviewUIKit', '~> 1.0.0''''
+- Add `PreviewUIKit` in your iOS Project with CocoaPods:
+```ruby
+pod 'PreviewUIKit', '~> 1.0.0'
+```
 - Install Xcode templates: Contents of XcodeTemplates folder copy to <ins>~/Library/Developer/Xcode/Templates/File Templates/User Templates</ins> (Create this folders if needed)
 - Install Xcode snippets: Contents of XcodeSnippets folder copy to <ins>~/Library/Developer/Xcode/UserData/CodeSnippets</ins> (Create this folders if needed)
 
