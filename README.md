@@ -19,6 +19,8 @@ Code-based UI development with Canvas Preview
 - Ability preview with custom initialize
 
 ![Demo](/resources/demo.mov)
+![Demo](/resources/demo2.mov)
+![Demo](/resources/demo3.mov)
 
 ## Installation
 - Add `PreviewUIKit` in your iOS Project with CocoaPods:
