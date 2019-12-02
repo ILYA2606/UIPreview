@@ -1,4 +1,4 @@
-# UIPreview
+# PreviewUIKit
 Подход к разработке UI с использованием SwiftUI и SnapKit
 
 ## Требуется:
