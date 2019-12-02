@@ -8,8 +8,8 @@
 
 import UIKit
 
-/// Второй контроллер
-final class SecondViewController: BaseViewController {
+/// Second controller
+final class SecondViewController: UIViewController {
     private var color: UIColor
     
     init(color: UIColor) {
@@ -21,14 +21,15 @@ final class SecondViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func setupUI() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         view.backgroundColor = color
     }
 }
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
-import DPPreviewProvider
+import PreviewUIKit
 @available(iOS 13.0, *) struct SecondViewControllerProvider: PreviewProvider {
     static var previews: some View {
         PreviewViewController {

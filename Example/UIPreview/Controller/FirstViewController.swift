@@ -9,17 +9,18 @@
 import SnapKit
 import UIKit
 
-/// Первый контроллер
-final class FirstViewController: BaseViewController {
+/// First controller
+final class FirstViewController: UIViewController {
     let button = PushButton()
     
-    override func setupUI() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         view.backgroundColor = .white
         button.addTarget(self, action: #selector(showSecondScreen), for: .touchUpInside)
         view.addSubview(button)
         button.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 150, height: 50))
+            make.size.equalTo(CGSize(width: 150, height: 150))
         }
     }
 
@@ -32,7 +33,7 @@ final class FirstViewController: BaseViewController {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
-import DPPreviewProvider
+import PreviewUIKit
 @available(iOS 13.0, *) struct FirstViewControllerProvider: PreviewProvider {
     static var previews: some View {
         PreviewViewController<FirstViewController>().edgesIgnoringSafeArea(.all)

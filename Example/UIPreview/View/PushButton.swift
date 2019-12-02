@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Кнопка с текстом Push
+/// Button with Push title
 final class PushButton: UIButton {
     
     override init(frame: CGRect) {
@@ -28,7 +28,7 @@ final class PushButton: UIButton {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
-import DPPreviewProvider
+import PreviewUIKit
 @available(iOS 13.0, *) struct PushButtonProvider: PreviewProvider {
     static var previews: some View {
         // Кастомный инициализатор для превью кнопки

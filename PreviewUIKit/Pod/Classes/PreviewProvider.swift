@@ -1,6 +1,6 @@
 //
 //  PreviewProvider.swift
-//  UIPreview
+//  PreviewUIKit
 //
 //  Created by Ilya Shkolnik on 13.11.2019.
 //  Copyright © 2019 Ilya Shkolnik. All rights reserved.
@@ -9,22 +9,22 @@
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
 
-/// Превью контроллера
+/// Preview of UIViewController
 @available(iOS 13.0, *) public struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
     public typealias UIViewControllerType = T
-    public typealias InitHandler = () -> (UIViewControllerType)
-    private var initHandler: InitHandler?
+    public typealias ConstructorHandler = () -> (UIViewControllerType)
+    private var constructorHandler: ConstructorHandler?
     
-    /// Инициализатор с конструктором
-    /// - Parameter initHandler: Блок для кастомного конструктора
-    public init(_ initHandler: InitHandler? = nil) {
-        self.initHandler = initHandler
+    /// Initializer with contructor closure
+    /// - Parameter constructorHandler: Closure for custom contructor
+    public init(_ constructorHandler: ConstructorHandler? = nil) {
+        self.constructorHandler = constructorHandler
     }
 
     public func makeUIViewController(
         context: UIViewControllerRepresentableContext<PreviewViewController>
     ) -> UIViewControllerType {
-        return initHandler?() ?? UIViewControllerType()
+        return constructorHandler?() ?? UIViewControllerType()
     }
 
     public func updateUIViewController(
@@ -33,22 +33,22 @@ import SwiftUI
     ) {}
 }
 
-/// Превью вьюшки
+/// Preview of UIView
 @available(iOS 13.0, *) public struct PreviewView<T: UIView>: UIViewControllerRepresentable {
     public typealias UIViewControllerType = UIViewController
-    public typealias InitHandler = () -> (T)
-    private var initHandler: InitHandler?
+    public typealias ConstructorHandler = () -> (T)
+    private var constructorHandler: ConstructorHandler?
     
-    /// Инициализатор с конструктором
-    /// - Parameter initHandler: Блок для кастомного конструктора
-    public init(_ initHandler: InitHandler? = nil) {
-        self.initHandler = initHandler
+    /// Initializer with contructor closure
+    /// - Parameter constructorHandler: Closure for custom contructor
+    public init(_ constructorHandler: ConstructorHandler? = nil) {
+        self.constructorHandler = constructorHandler
     }
 
     public func makeUIViewController(
         context: UIViewControllerRepresentableContext<PreviewView>
     ) -> UIViewControllerType {
-        return makeViewController(from: initHandler?() ?? T())
+        return makeViewController(from: constructorHandler?() ?? T())
     }
 
     public func updateUIViewController(
@@ -56,8 +56,8 @@ import SwiftUI
         context: UIViewControllerRepresentableContext<PreviewView>
     ) {}
     
-    /// Создаем контроллер с вьюшкой, размещенной по центру
-    /// - Parameter view: Вьюшка
+    /// Make UIViewController with view in center
+    /// - Parameter view: View for placing in center
     private func makeViewController(from view: T) -> UIViewControllerType {
         let controller = UIViewControllerType()
         controller.view.addSubview(view)

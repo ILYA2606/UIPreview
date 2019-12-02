@@ -1,9 +1,9 @@
 PODS:
-  - DPPreviewProvider (1.0.0)
+  - PreviewUIKit (1.0.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - DPPreviewProvider (from `../DPPreviewProvider`)
+  - PreviewUIKit (from `../PreviewUIKit`)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
@@ -11,13 +11,13 @@ SPEC REPOS:
     - SnapKit
 
 EXTERNAL SOURCES:
-  DPPreviewProvider:
-    :path: "../DPPreviewProvider"
+  PreviewUIKit:
+    :path: "../PreviewUIKit"
 
 SPEC CHECKSUMS:
-  DPPreviewProvider: 19272a446071c1264716ca75c418b0df3371344c
+  PreviewUIKit: 64c3853b67d17b83c3ff742ccc051dd183a21143
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 23fe1607da6adb9da2bf9347ad4a93ac62ff4e8e
+PODFILE CHECKSUM: 61ab42e0dc708cb33e1b0b07a616d8af8d77ab44
 
 COCOAPODS: 1.8.3
