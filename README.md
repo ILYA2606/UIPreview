@@ -1,3 +1,5 @@
+![CocoaPods](https://cocoapod-badges.herokuapp.com/v/PreviewUIKit/badge.png)
+
 # PreviewUIKit
 Code-based UI development with Canvas Preview
 
@@ -15,6 +17,8 @@ Code-based UI development with Canvas Preview
 - Supports iOS 9+ projects
 - Xcode templates and snippets
 - Ability preview with custom initialize
+
+![Demo](/resources/demo.mov)
 
 ## Installation
 - Add 'PreviewUIKit' in your iOS Project with CocoaPods '''pod 'PreviewUIKit', '~> 1.0.0''''
