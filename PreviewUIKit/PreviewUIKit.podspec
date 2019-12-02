@@ -1,8 +1,9 @@
 Pod::Spec.new do |spec|
   spec.name         = "PreviewUIKit"
-  spec.version      = "1.0.0"
-  spec.summary      = "Code-based UI with Preview"
+  spec.version      = "1.0.1"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.description  = "Code-based UI with Preview"
+  spec.summary      = "Canvas Preview for UIKit"
   spec.homepage     = "https://github.com/ILYA2606/UIPreview"
   spec.license      = { :type => "MIT" }
   spec.author       = { "Ilya Shkolnik" => "dev@darknessproduction.com" }
