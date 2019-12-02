@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#if canImport(SwiftUI) &amp;&amp; canImport(Combine)
 import SwiftUI
-import DPPreviewProvider
+import PreviewUIKit
 @available(iOS 13.0, *) struct &lt;#View#&gt;Provider: PreviewProvider {
     static var previews: some View {
         PreviewView&lt;&lt;#View#&gt;&gt;().edgesIgnoringSafeArea(.all)
