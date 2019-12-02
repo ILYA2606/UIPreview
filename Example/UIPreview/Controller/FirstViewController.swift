@@ -34,9 +34,9 @@ final class FirstViewController: UIViewController {
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
 import PreviewUIKit
-@available(iOS 13.0, *) struct <#ViewController#>Provider: PreviewProvider {
+@available(iOS 13.0, *) struct FirstViewControllerProvider: PreviewProvider {
     static var previews: some View {
-        PreviewViewController<<#ViewController#>>().edgesIgnoringSafeArea(.all)
+        PreviewViewController<FirstViewController>().edgesIgnoringSafeArea(.all)
     }
 }
 #endif
