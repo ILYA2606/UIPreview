@@ -16,8 +16,8 @@ final class PushButton: UIButton {
         self.backgroundColor = .white
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 25
-        self.setTitle("Push2", for: UIControl.State())
-        self.setTitleColor(#colorLiteral(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0), for: UIControl.State())
+        self.setTitle("Push", for: UIControl.State())
+        self.setTitleColor(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), for: UIControl.State())
     }
     
     required init?(coder: NSCoder) {
