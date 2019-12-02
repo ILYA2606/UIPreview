@@ -3,21 +3,18 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - PreviewUIKit (from `../PreviewUIKit`)
+  - PreviewUIKit (~> 1.0.0)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - PreviewUIKit
     - SnapKit
 
-EXTERNAL SOURCES:
-  PreviewUIKit:
-    :path: "../PreviewUIKit"
-
 SPEC CHECKSUMS:
-  PreviewUIKit: 64c3853b67d17b83c3ff742ccc051dd183a21143
+  PreviewUIKit: 5d8918e4414a1ae3e11ba77185a4ccf33fb2a418
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 61ab42e0dc708cb33e1b0b07a616d8af8d77ab44
+PODFILE CHECKSUM: a3762295e94d76abb2c3de7f6252e24eecd81efd
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

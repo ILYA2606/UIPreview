@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
   spec.author       = { "Ilya Shkolnik" => "dev@darknessproduction.com" }
   spec.platform     = :ios, '9.0'
   spec.source       = { :git => "https://github.com/ILYA2606/UIPreview.git", :tag => spec.version }
-  spec.source_files  = 'Pod/Classes/*.{swift,m,h}'
+  spec.source_files  = 'PreviewUIKit/**/*.{swift,m,h}'
 end

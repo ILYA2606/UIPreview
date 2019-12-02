@@ -20,7 +20,7 @@ final class FirstViewController: UIViewController {
         view.addSubview(button)
         button.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 150, height: 150))
+            make.size.equalTo(CGSize(width: 100, height: 100))
         }
     }
 

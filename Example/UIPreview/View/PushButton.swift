@@ -16,7 +16,7 @@ final class PushButton: UIButton {
         self.backgroundColor = .white
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 25
-        self.setTitle("Push", for: UIControl.State())
+        self.setTitle("Push2", for: UIControl.State())
         self.setTitleColor(#colorLiteral(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0), for: UIControl.State())
     }
     
@@ -31,7 +31,7 @@ import SwiftUI
 import PreviewUIKit
 @available(iOS 13.0, *) struct PushButtonProvider: PreviewProvider {
     static var previews: some View {
-        // Кастомный инициализатор для превью кнопки
+        // Custom initializer for button preview
         PreviewView {
             PushButton(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
         }.edgesIgnoringSafeArea(.all)

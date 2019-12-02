@@ -6,7 +6,7 @@
 - macOS Catalina
 - CocoaPods
 
-![Screenshot](/screenshots/1.png)
+![Screenshot](/resources/1.png)
 
 ## Описание подхода:
 - Никаких Storyboard и XIB
