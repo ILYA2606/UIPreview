@@ -17,6 +17,7 @@ Code-based UI development with Canvas Preview
 - Supports iOS 9+ projects
 - Xcode templates and snippets
 - Ability preview with custom initialize
+- Compactible with SnapKit and others code-based UI development
 
 ![Demo](/resources/demo.mov)
 
