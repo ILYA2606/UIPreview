@@ -31,7 +31,6 @@ import SwiftUI
 import PreviewUIKit
 @available(iOS 13.0, *) struct PushButtonProvider: PreviewProvider {
     static var previews: some View {
-        // Custom initializer for button preview
         PreviewView {
             PushButton(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
         }.edgesIgnoringSafeArea(.all)

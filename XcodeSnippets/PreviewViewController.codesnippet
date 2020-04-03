@@ -10,16 +10,18 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#if canImport(SwiftUI) &amp;&amp; canImport(Combine)
-import SwiftUI
 import PreviewUIKit
+import SwiftUI
 @available(iOS 13.0, *) struct &lt;#ViewController#&gt;Provider: PreviewProvider {
     static var previews: some View {
-        PreviewViewController&lt;&lt;#ViewController#&gt;&gt;().edgesIgnoringSafeArea(.all)
+        PreviewViewController {
+            &lt;#ViewController#&gt;()
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C0E97949-B3F7-431A-9173-F43685C4EFC7</string>
+	<string>A55A78EC-5D5D-496E-AD08-6F6DEF4A1611</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetPlatformFamily</key>

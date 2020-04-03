@@ -3,7 +3,7 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - PreviewUIKit (~> 1.0.0)
+  - PreviewUIKit
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   PreviewUIKit: 5d8918e4414a1ae3e11ba77185a4ccf33fb2a418
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a3762295e94d76abb2c3de7f6252e24eecd81efd
+PODFILE CHECKSUM: c8c9142a897a53ccd5edc8373ca2c5acda1e05ef
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

@@ -36,7 +36,9 @@ import SwiftUI
 import PreviewUIKit
 @available(iOS 13.0, *) struct FirstViewControllerProvider: PreviewProvider {
     static var previews: some View {
-        PreviewViewController<FirstViewController>().edgesIgnoringSafeArea(.all)
+        PreviewViewController {
+            FirstViewController()
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 #endif

@@ -9,7 +9,7 @@
 import UIKit
 
 /// Main navigation controller
-class MainNavigationController: UINavigationController {}
+final class MainNavigationController: UINavigationController {}
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI

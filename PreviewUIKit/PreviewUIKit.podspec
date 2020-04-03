@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PreviewUIKit"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.description  = "Code-based UI with Preview"
   spec.summary      = "Canvas Preview for UIKit"
