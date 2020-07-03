@@ -86,16 +86,18 @@ public init(_ constructorHandler: @escaping ConstructorHandler) {
             )
         case .autoHeight(let horizontalInset):
             var viewSize = controller.view.frame.size
-            viewSize.width = controller.view.frame.width - 2 * horizontalInset
+            let width = controller.view.frame.width - 2 * horizontalInset
+            viewSize.width = width
+            
             viewSize = view.systemLayoutSizeFitting(
                 viewSize,
                 withHorizontalFittingPriority: .required,
                 verticalFittingPriority: .fittingSizeLevel
             )
             view.frame = CGRect(
-                x: controller.view.center.x - viewSize.width / 2,
+                x: horizontalInset,
                 y: controller.view.center.y - viewSize.height / 2,
-                width: viewSize.width,
+                width: width,
                 height: viewSize.height
             )
         case .full(let insets):
