@@ -111,4 +111,65 @@ public init(_ constructorHandler: @escaping ConstructorHandler) {
         return controller
     }
 }
+
+/// UIViewController representation in SwiftUI
+@available(iOS 13.0, *) public struct SwiftUIViewController<T: UIViewController>: UIViewControllerRepresentable {
+    public typealias UIViewControllerType = T
+    public typealias ConstructorHandler = () -> (UIViewControllerType)
+    public typealias UpdateHandler = (UIViewControllerType) -> ()
+    public var onUpdate: UpdateHandler
+    private var constructorHandler: ConstructorHandler
+
+    /// Initializer with contructor closure
+    /// - Parameter constructorHandler: Closure for custom contructor
+    /// - Parameter onUpdate: Closure for update controller logic
+    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler = { _ in }) {
+        self.constructorHandler = constructorHandler
+        self.onUpdate = onUpdate
+    }
+
+    public func makeUIViewController(
+        context _: UIViewControllerRepresentableContext<SwiftUIViewController>
+    ) -> UIViewControllerType {
+        constructorHandler()
+    }
+
+    public func updateUIViewController(
+        _ uiViewController: UIViewControllerType,
+        context _: UIViewControllerRepresentableContext<SwiftUIViewController>
+    ) {
+        onUpdate(uiViewController)
+    }
+}
+
+/// UIView representation in SwiftUI
+@available(iOS 13.0, *) public struct SwiftUIView<T: UIView>: UIViewRepresentable {
+    public typealias UIViewType = T
+    public typealias ConstructorHandler = () -> (UIViewType)
+    public typealias UpdateHandler = (UIViewType) -> ()
+    public var onUpdate: UpdateHandler
+    private var constructorHandler: ConstructorHandler
+
+    /// Initializer with contructor closure
+    /// - Parameter sizeType: Size type
+    /// - Parameter constructorHandler: Closure for custom contructor
+    /// - Parameter onUpdate: Closure for update view logic
+    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler = { _ in }) {
+        self.constructorHandler = constructorHandler
+        self.onUpdate = onUpdate
+    }
+
+    public func makeUIView(
+        context _: UIViewRepresentableContext<SwiftUIView>
+    ) -> UIViewType {
+        constructorHandler()
+    }
+
+    public func updateUIView(
+        _ uiView: UIViewType,
+        context _: UIViewRepresentableContext<SwiftUIView>
+    ) {
+        onUpdate(uiView)
+    }
+}
 #endif

@@ -13,7 +13,6 @@ final class MainNavigationController: UINavigationController {}
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
-import PreviewUIKit
 @available(iOS 13.0, *) struct MainNavigationControllerProvider: PreviewProvider {
     static var previews: some View {
         PreviewViewController {

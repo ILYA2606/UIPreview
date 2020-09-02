@@ -29,7 +29,6 @@ final class SecondViewController: UIViewController {
 
 #if canImport(SwiftUI) && canImport(Combine)
 import SwiftUI
-import PreviewUIKit
 @available(iOS 13.0, *) struct SecondViewControllerProvider: PreviewProvider {
     static var previews: some View {
         PreviewViewController {

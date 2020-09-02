@@ -14,6 +14,7 @@
 		091DAE5F237C07140090CE85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091DAE5D237C07140090CE85 /* LaunchScreen.storyboard */; };
 		091DAE67237C09A30090CE85 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE66237C09A30090CE85 /* SecondViewController.swift */; };
 		091DAE69237C09C50090CE85 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DAE68237C09C50090CE85 /* MainNavigationController.swift */; };
+		A068BCCD24FF8DB500C73AB0 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A068BCCC24FF8DB500C73AB0 /* PreviewProvider.swift */; };
 		FF57E17DC4B0EAE802FD1C0F /* Pods_UIPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F1F33BE67B930F19F83DBB /* Pods_UIPreview.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		091DAE68237C09C50090CE85 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		7394655013ADB3D3CF733BA9 /* Pods-UIPreview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIPreview.debug.xcconfig"; path = "Target Support Files/Pods-UIPreview/Pods-UIPreview.debug.xcconfig"; sourceTree = "<group>"; };
 		778F8C70454F7BFEF81B72F9 /* Pods-UIPreview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIPreview.release.xcconfig"; path = "Target Support Files/Pods-UIPreview/Pods-UIPreview.release.xcconfig"; sourceTree = "<group>"; };
+		A068BCCC24FF8DB500C73AB0 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewProvider.swift; path = ../../Pod/Classes/PreviewProvider.swift; sourceTree = "<group>"; };
 		E3F1F33BE67B930F19F83DBB /* Pods_UIPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				091DAE52237C07110090CE85 /* AppDelegate.swift */,
+				A068BCCC24FF8DB500C73AB0 /* PreviewProvider.swift */,
 				091BF48C237C580A0043522A /* View */,
 				091BF48B237C57FC0043522A /* Controller */,
 				091DAE5B237C07140090CE85 /* Assets.xcassets */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091BF48F237C5EAC0043522A /* PushButton.swift in Sources */,
+				A068BCCD24FF8DB500C73AB0 /* PreviewProvider.swift in Sources */,
 				091DAE57237C07110090CE85 /* FirstViewController.swift in Sources */,
 				091DAE53237C07110090CE85 /* AppDelegate.swift in Sources */,
 				091DAE69237C09C50090CE85 /* MainNavigationController.swift in Sources */,
