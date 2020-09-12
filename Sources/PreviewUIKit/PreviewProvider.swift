@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ilya Shkolnik. All rights reserved.
 //
 
-#if canImport(SwiftUI) && canImport(Combine)
+#if canImport(SwiftUI) && canImport(Combine) && os(iOS)
 import SwiftUI
 
 /// Preview of UIViewController
@@ -123,7 +123,7 @@ public init(_ constructorHandler: @escaping ConstructorHandler) {
     /// Initializer with contructor closure
     /// - Parameter constructorHandler: Closure for custom contructor
     /// - Parameter onUpdate: Closure for update controller logic
-    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler = { _ in }) {
+    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler) {
         self.constructorHandler = constructorHandler
         self.onUpdate = onUpdate
     }
@@ -154,7 +154,7 @@ public init(_ constructorHandler: @escaping ConstructorHandler) {
     /// - Parameter sizeType: Size type
     /// - Parameter constructorHandler: Closure for custom contructor
     /// - Parameter onUpdate: Closure for update view logic
-    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler = { _ in }) {
+    public init(_ constructorHandler: @escaping ConstructorHandler, onUpdate: @escaping UpdateHandler) {
         self.constructorHandler = constructorHandler
         self.onUpdate = onUpdate
     }

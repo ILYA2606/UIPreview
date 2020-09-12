@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = "PreviewUIKit"
-  spec.version       = "2.0.0"
+  spec.version       = "2.0.1"
   spec.description   = "Code-based UI with Preview"
   spec.summary       = "Canvas Preview for UIKit"
   spec.homepage      = "https://github.com/ILYA2606/UIPreview"
@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
   spec.author        = { "Ilya Shkolnik" => "dev@darknessproduction.com" }
   spec.platform      = :ios, '9.0'
   spec.source        = { :git => "https://github.com/ILYA2606/UIPreview.git", :tag => spec.version }
-  spec.source_files  = 'Pod/**/*.{swift,m,h}'
+  spec.source_files  = 'Sources/PreviewUIKit/**/*.{swift,m,h}'
   spec.swift_version = '5.0'
 end
