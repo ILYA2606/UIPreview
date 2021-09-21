@@ -11,12 +11,15 @@ let package = Package(
     products: [
         .library(
             name: "PreviewUIKit",
-            targets: ["PreviewUIKit"]),
+            targets: ["PreviewUIKit"]
+        ),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "PreviewUIKit",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Example", "resources", "XcodeSnippets", "XcodeTemplates"]
+        ),
     ]
 )
