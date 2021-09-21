@@ -19,7 +19,7 @@ let package = Package(
         .target(
             name: "PreviewUIKit",
             dependencies: [],
-            exclude: ["Example", "resources", "XcodeSnippets", "XcodeTemplates"]
+            path: "Sources"
         ),
     ]
 )
