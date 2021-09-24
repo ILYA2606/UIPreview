@@ -17,7 +17,7 @@ import SwiftUI
 
     /// Initializer with contructor closure
     /// - Parameter constructorHandler: Closure for custom contructor
-public init(_ constructorHandler: @escaping ConstructorHandler) {
+    public init(_ constructorHandler: @escaping ConstructorHandler) {
         self.constructorHandler = constructorHandler
     }
 
