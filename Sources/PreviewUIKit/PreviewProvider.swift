@@ -8,7 +8,6 @@
 
 #if canImport(SwiftUI) && canImport(Combine) && os(iOS)
 import SwiftUI
-import UIKit
 
 /// Preview of UIViewController
 @available(iOS 13.0, *) public struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
