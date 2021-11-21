@@ -6,11 +6,11 @@
 //  Copyright © 2019 Ilya Shkolnik. All rights reserved.
 //
 
-#if canImport(SwiftUI) && canImport(Combine) && os(iOS)
+#if canImport(SwiftUI) && canImport(Combine) && canImport(UIKit)
 import SwiftUI
 
 /// Preview of UIViewController
-@available(iOS 13.0, *) public struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
+@available(iOS 13.0, tvOS 13.0, *) public struct PreviewViewController<T: UIViewController>: UIViewControllerRepresentable {
     public typealias UIViewControllerType = T
     public typealias ConstructorHandler = () -> (UIViewControllerType)
     private var constructorHandler: ConstructorHandler
@@ -34,7 +34,7 @@ import SwiftUI
 }
 
 /// Preview of UIView
-@available(iOS 13.0, *) public struct PreviewView<T: UIView>: UIViewControllerRepresentable {
+@available(iOS 13.0, tvOS 13.0, *) public struct PreviewView<T: UIView>: UIViewControllerRepresentable {
     /// Size type
     public enum SizeType {
         /// Automatic by view size
@@ -113,7 +113,7 @@ import SwiftUI
 }
 
 /// UIViewController representation in SwiftUI
-@available(iOS 13.0, *) public struct SwiftUIViewController<T: UIViewController>: UIViewControllerRepresentable {
+@available(iOS 13.0, tvOS 13.0, *) public struct SwiftUIViewController<T: UIViewController>: UIViewControllerRepresentable {
     public typealias UIViewControllerType = T
     public typealias ConstructorHandler = () -> (UIViewControllerType)
     public typealias UpdateHandler = (UIViewControllerType) -> ()
@@ -143,7 +143,7 @@ import SwiftUI
 }
 
 /// UIView representation in SwiftUI
-@available(iOS 13.0, *) public struct SwiftUIView<T: UIView>: UIViewRepresentable {
+@available(iOS 13.0, tvOS 13.0, *) public struct SwiftUIView<T: UIView>: UIViewRepresentable {
     public typealias UIViewType = T
     public typealias ConstructorHandler = () -> (UIViewType)
     public typealias UpdateHandler = (UIViewType) -> ()
