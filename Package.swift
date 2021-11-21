@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "PreviewUIKit",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v13),
+        .tvOS(.v13)
     ],
     products: [
         .library(
